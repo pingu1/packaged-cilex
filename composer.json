@@ -1,0 +1,18 @@
+{
+    "name": "pingu1/packaged-cilex",
+    "description": "A packaged version of Cilex Framework with clean project architecture",
+    "require": {
+        "cilex/cilex": "^2.0"
+    },
+    "authors": [
+        {
+            "name": "Renaut Tilte",
+            "email": "renaud.tilte@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "src/"
+        }
+    }
+}
