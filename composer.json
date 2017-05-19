@@ -1,15 +1,18 @@
 {
     "name": "pingu1/packaged-cilex",
     "description": "A packaged version of Cilex Framework with clean project architecture",
-    "require": {
-        "cilex/cilex": "^2.0"
-    },
+    "keywords": ["microframework", "cli"],
+    "homepage": "https://github.com/pingu1/packaged-cilex",
+    "license": "MIT",
     "authors": [
         {
             "name": "Renaut Tilte",
             "email": "renaud.tilte@gmail.com"
         }
     ],
+    "require": {
+        "cilex/cilex": "^2.0"
+    },
     "autoload": {
         "psr-4": {
             "app\\": "src/"
