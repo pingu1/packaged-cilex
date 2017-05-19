@@ -6,7 +6,7 @@ Packaged Cilex, a clean version of Cilex with isolated code
 ## Installation
 
 1. Download composer: `curl -s https://getcomposer.org/installer | php`
-2. Create a new project based on this one `composerr create-project pingu1/packaged-cilex test`
+2. Create a new project based on this one `composer.phar create-project pingu1/packaged-cilex test`
 
 ## Usage
 
