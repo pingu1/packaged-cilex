@@ -7,12 +7,13 @@ Packaged Cilex, a clean version of Cilex with isolated code
 
 1. Download composer: `curl -s https://getcomposer.org/installer | php`
 2. Create a new project based on this one `composer.phar create-project pingu1/packaged-cilex test`
+3. Init the Git repository in your new project `git init`
 
 ## Usage
 
 - Put your code in the `src/command/` folder
 - Add additional directories as needed (`src/model/`, `src/helper/`, `src/library/` ...)
-- Add your scripts to the `cilex` entry point
+- Add your scripts to the `cilex` entry point (located at the root of the project)
 ```php
 $app->command(new \app\command\YourNamespaceHere());
 ```
@@ -23,6 +24,16 @@ $app->command(new \app\command\YourNamespaceHere());
 ./cilex hello renaud
 ./cilex hello renaud -y
 ./cilex hello renaud --yell
+```
+
+## Bonus
+You can easily update the composer.json file to give another namespace than `app` to the application by updating the autoloader as follows:
+```php
+"autoload": {
+    "psr-4": {
+        "YOUR_APP_NAME_HERE\\": "src/"
+    }
+}
 ```
 
 ## Help and docs
